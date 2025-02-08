@@ -5,30 +5,13 @@ using namespace std;
 
 int main()
 {
-    int a1,b1,a2,b2;
-    cout<<"Enter the intervals (a1 b1 a2 b2): "<<endl;
-    cin>> a1 >> b1>> a2 >> b2;
+    int x , s1 ,e1 , s2 ,e2 , s3 , e3;
+    cin>> x >> s1 >> e1 >> s2 >> e2 >> s3 >> e3 ;
+    int Count =0;
+     if( s1<= x && x<= e1) Count++;
+     if( s2<= x && x<= e2) Count++;
+     if( s3<= x && x<= e3) Count++;
 
-    int Start ,End;
-     if(a1 >= a2)
-     {
-         Start = a1;
-     }else
-     {
-        Start = a2;
-     }
-
-     if(b1 <= b2)
-     {
-         End= b1;
-     }else
-     {
-         End= b2;
-     }
-
-     if(Start <= End )
-     {
-         cout << Start <<" " << End <<endl;
-     }else {cout<< -1 <<endl;}
+     cout<< Count <<endl;
     return 0;
 }
