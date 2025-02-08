@@ -1,22 +1,27 @@
-//Task1.H2.1
-#include<iostream>
+//Task1.H2.2
+// هرم من *
+#include <iostream>
+
 using namespace std;
 
 int main()
 {
-	cout<<"\n\nGuess the "//
-		<<"output\n---\n";//
-                          //Guess the output
-                          //---
-	cout<<10+20-5<<endl;// 25
-	cout<<"14/2"<<"\n";//14/2
-	cout<<17-10<<"\n";//7
-	cout<<"endl";//endl
-	cout<<"\nPractice makes perfect";//Practice makes perfect
-
-
-
-	return 0;
-
-	cout<<"\n\nBye\n\n";
+    int rows;
+    cout<<"Enter number of rows: "<<endl;
+    cin>> rows;
+    for(int i =1; i<=rows ; i++)
+    {
+        //spaces
+        for(int j =1; j<=rows - i;j++)
+        {
+            cout<<" ";
+        }
+        //stars
+        for(int c =1; c<=(2*i-1);c++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
 }
